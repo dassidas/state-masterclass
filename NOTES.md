@@ -1,4 +1,5 @@
 # React State Masterclass
+    - slides: https://www.slideshare.net/nirkaufman/redux-pattens-jsheroes-2018
 
 ## CQS
     - very old design pattern
@@ -20,4 +21,12 @@
         - mixing redux with other patterns ruins the benefits
     - important divide: COMPONENT STATE / APPLICATION STATE
     - selectors should interpret state based on what individual view needs
-        
+    - BUSINESS LOGIC should land in two locations:
+        - middleware, to handle post-action side effects
+        - selectors, to handle pre-view side effects
+    - INTERESTING SLIDE: #35, action processing patterns
+
+## Recreating MVC with React State patterns
+    1. State ⬇
+    2. Hooks ⬇
+    3. Views
