@@ -2,6 +2,7 @@
     - slides: https://www.slideshare.net/nirkaufman/redux-pattens-jsheroes-2018
 
 ## CQS
+    - "Command Query separation"
     - very old design pattern
     - separate code that writes to the store from code that reads from the store
     - inspiration for redux
@@ -30,3 +31,6 @@
     1. State ⬇
     2. Hooks ⬇
     3. Views
+
+    - Action Creators === Commands
+    - Selectors === Queries
