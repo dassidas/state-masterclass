@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-const composeEnhancer = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose;
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 export const store = createStore(
     state => ({ name: 'alex' }),
