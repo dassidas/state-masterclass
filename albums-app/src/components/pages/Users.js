@@ -1,14 +1,8 @@
-import React, { useEffect } from 'react';
-import { useUsersActions } from '../../hooks/commands/useUsersActions';
+import React from 'react';
 import { useAllUsers } from '../../hooks/queries/useUsersQueries';
 
 const Users = () => {
-    const { fetchAllUsers } = useUsersActions();
     const users = useAllUsers();
-
-    useEffect(() => {
-        fetchAllUsers();
-    }, [fetchAllUsers]);
 
     return (
         <div>

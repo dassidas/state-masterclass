@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { apiRequest } from '../../store/actions/apiRequest';
-import { setUsers } from '../../store/actions/setUsers';
+import { setUsers } from '../../store/actions/users';
 
 export function useUsersActions() {
     const dispatch = useDispatch();
