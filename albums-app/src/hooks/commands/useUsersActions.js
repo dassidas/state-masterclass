@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { apiRequest } from '../../store/actions/apiRequest';
+import { setUsers } from '../../store/actions/setUsers';
 
 export function useUsersActions() {
     const dispatch = useDispatch();
@@ -14,8 +15,8 @@ export function useUsersActions() {
     };
 
     const onFetchUsersSuccess = (users) => {
-        console.log(users);
+        dispatch(setUsers({ users }));
     };
 
-    return { fetchAllUsers };
+    return { fetchAllUsers }
 }

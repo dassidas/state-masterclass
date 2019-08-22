@@ -7,7 +7,7 @@ function App() {
         <h1>Hello Redux</h1>
         <Users />
     </div>
-  );
+  )
 }
 
 export default App;
